@@ -1,0 +1,41 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(/img/fundo.jpg);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+}
+
+#listaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerContainer{
+    width: 100%;
+    height: 70px;
+    margin: 0; 
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+}
+
+.logo{
+    padding-left: 10px;
+}
+
+.divLista{
+    padding-top: 10px;
+    padding-right: 50px;
+    width: 350px;
+    margin-left: auto;
+}
