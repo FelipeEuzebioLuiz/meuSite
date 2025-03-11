@@ -4,7 +4,7 @@
 
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url(/img/fundo.jpg);
+    background-image: url(/img/fundo2.jpg);
 }
 
 li{
@@ -13,6 +13,11 @@ li{
 
 h1, h2, h3, h4, p{
     color:#fff;
+}
+
+
+p{
+    font-size: 20px;
 }
 
 #nossoTrabalho h1{
@@ -64,9 +69,10 @@ a:hover{
 .introducao{
     width: 100%;
     height: 900px;
-    background-color: #f5f4;
+    background: linear-gradient(to bottom right, #111, #444);
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-direction: row;
 }
 
@@ -75,13 +81,31 @@ a:hover{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .textoIntroducao h1{
     font-family: Audiowide;
     font-size: 80px;
     text-align: center;
+}
+
+.botaoIntroducao{
+    font-family: Varela Round;
+    font-size: large;
+    font-weight: bolder;
+    border-style: none;
+    border-radius: 20px;
+    width: 170px;
+    height: 50px; 
+    margin: 0 auto 0 auto;
+    transition: 0.5s ease;
+}
+
+.botaoIntroducao:hover{
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.2);
 }
 
 
