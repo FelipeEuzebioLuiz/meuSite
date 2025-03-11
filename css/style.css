@@ -1,0 +1,96 @@
+/*//////////////////////////////
+///ESTILIZAÇÃO PADRÃO DO SITE///
+//////////////////////////////*/
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(/img/fundo.jpg);
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, h4, p{
+    color:#fff;
+}
+
+#nossoTrabalho h1{
+    font-size: 100px;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color:#fff;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #444;
+}
+
+/*///////////////////////
+///CONTAINER PRINCIPAL///
+///////////////////////*/
+
+.headerContainer{
+    width: 100%;
+    height: 70px;
+    margin: 0; 
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+}
+
+.logo{
+    padding-left: 10px;
+}
+
+.divLista{
+    padding-top: 10px;
+    padding-right: 50px;
+    width: 350px;
+    margin-left: auto;
+}
+
+/*//////////////
+///INTRODUÇÃO///
+//////////////*/
+
+.introducao{
+    width: 100%;
+    height: 900px;
+    background-color: #f5f4;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.textoIntroducao{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.textoIntroducao h1{
+    font-family: Audiowide;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+/*/////////////////
+///NOSSO SERVIÇO///
+/////////////////*/
+#listaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
