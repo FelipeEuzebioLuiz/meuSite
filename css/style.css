@@ -1,0 +1,201 @@
+/*//////////////////////////////
+///ESTILIZAÇÃO PADRÃO DO SITE///
+//////////////////////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(/img/fundo2.jpg);
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, h4, p{
+    color:#fff;
+}
+
+h1{
+    font-family: Audiowide;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color:#fff;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #216daa;
+}
+
+/*///////////////////////
+///CONTAINER PRINCIPAL///
+///////////////////////*/
+
+.headerContainer{
+    width: 100%;
+    height: 100px;
+    margin: 0; 
+    top: 0;
+    padding-right: 120px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+}
+
+.logo{
+    width: 235px;
+    height: 100px;
+    padding-left: 100px;
+    cursor: pointer;
+}
+
+.divLista{
+    padding-top: 40px;
+    padding-right: 20px;
+    width: 350px;
+    margin-left: auto;
+}
+
+.divLista li a{
+    font-size: 20px;
+}
+
+#listaContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*//////////////
+///INTRODUÇÃO///
+//////////////*/
+
+.introducao{
+    width: 100%;
+    height: 900px;
+    /*background: linear-gradient(to bottom right, #111, #444);*/
+    background-image: url(/img/fundo4.jpg);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.textoIntroducao{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.textoIntroducao h1{
+    font-size: 80px;
+    text-align: center;
+}
+
+.botaoIntroducao{
+    font-family: Varela Round;
+    font-size: large;
+    font-weight: bolder;
+    border-style: none;
+    border-radius: 20px;
+    width: 170px;
+    height: 50px; 
+    margin: 0 auto 0 auto;
+    transition: 0.5s ease;
+}
+
+.botaoIntroducao:hover{
+    background-color: #216daa;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+
+/*//////////////////
+///NOSSO TRABALHO///
+//////////////////*/
+.nossoTrabalho{
+    width: 100%;
+    height: 1000px;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.tituloNossoTrabalho{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    text-align: center;
+}
+
+#tituloNossoTrabalho{
+    padding: 120px 60px;
+    font-size: 70px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #216daa;
+    border-width: 10px;
+}
+
+#textoTrabalho{
+    width: 60%;
+    height: 400px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 70px;
+    margin-top: 100px;
+    align-items: center;
+    padding: auto;
+    background-image: url(/img/nosso_trabalho.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #fff;
+}
+
+#textoTrabalho p{
+    font-size: 25px;
+    line-height: 35px;
+    padding: 50px;
+}
+
+
+/*
+.divCards{
+    width: 71%;
+    height: 400px;
+    background-color: #444f99;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards{
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+}
+*/
