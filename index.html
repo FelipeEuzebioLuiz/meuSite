@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="site">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Varela Round">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <script src="/include/lib/angular-1.6.9/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="/include/controller/siteController.js"></script>
+    <script src="/include/service/siteService.js"></script>
     <title>Template teste</title>
 </head>
-<body>
+
+<body ng-controller="siteController">
     <header id="headerContainer" class="headerContainer">
         <a href="#"><img src="img/logo generica.avif" class="logo"></a>
         <div class="divLista">
@@ -17,18 +22,18 @@
                 <li><a href="#nossoTrabalho">Serviços</a></li>
                 <li><a href="#vendas">Vendas</a></li>
                 <li><a href="">Portifólio</a></li>
-                
+
             </ul>
-        </div>  
+        </div>
     </header>
-    
+
     <section class="introducao">
         <div class="textoIntroducao">
             <h1>Meu Site</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Amet delectus sit reprehenderit harum earum reiciendis et corrupti, 
-                labore debitis doloremque, ab optio exercitationem vitae quis consequuntur 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Amet delectus sit reprehenderit harum earum reiciendis et corrupti,
+                labore debitis doloremque, ab optio exercitationem vitae quis consequuntur
                 quidem eveniet? Fugit, numquam.
             </p>
             <a href="#nossoTrabalho"><button class="botaoIntroducao">COMEÇAR</button></a>
@@ -41,11 +46,11 @@
             <h1 id="tituloNossoTrabalho">Nosso <br> trabalho</h1>
             <div id="textoTrabalho">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, deleniti, 
-                    reprehenderit accusantium veniam illo atque sit corporis tenetur quae 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, deleniti,
+                    reprehenderit accusantium veniam illo atque sit corporis tenetur quae
                     placeat corrupti voluptatem, odio eius nam fugit alias cum dignissimos quidem.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, deleniti, 
-                    reprehenderit accusantium veniam illo atque sit corporis tenetur quae 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, deleniti,
+                    reprehenderit accusantium veniam illo atque sit corporis tenetur quae
                     placeat corrupti voluptatem, odio eius nam fugit alias cum dignissimos quidem.
                 </p>
             </div>
@@ -59,7 +64,12 @@
     <h1 id="h1Vendas">Vendas</h1>
     <br>
     <section id="vendas">
-        
+        <ul ng-repeat="n in produtos">
+            <li>
+                <div class="cardVenda"></div>
+            </li>
+        </ul>
+        <!--
         <div class="cardVenda">
             <p>Quantidade:</p>
         </div>
@@ -69,6 +79,7 @@
         <div class="cardVenda">
             <p>Quantidade:</p>
         </div>
+        -->
     </section>
     <br><br><br>
     <footer>
@@ -82,4 +93,5 @@
         </div>
     </footer>
 </body>
+
 </html>
