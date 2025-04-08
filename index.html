@@ -64,9 +64,15 @@
     <h1 id="h1Vendas">Vendas</h1>
     <br>
     <section id="vendas">
-        <ul ng-repeat="n in produtos">
-            <li>
-                <div class="cardVenda"></div>
+        <ul class="secaoVendas">
+            <li ng-repeat="n in produtos" class="cardVenda">
+                <img src="/img/logo generica.avif" alt="" style="width: 300px; height: 300px; margin: 0 auto 0 auto;">
+                <br>
+                {{n.nome}}
+                <br>
+                R${{n.venda.toFixed(2)}}
+                <br>
+                Quantidade: {{n.quantidade}}
             </li>
         </ul>
         <!--

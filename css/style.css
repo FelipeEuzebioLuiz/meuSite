@@ -219,14 +219,26 @@ footer{
     width: 400px;
     height: 400px;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
     background-color: #216daa;
     border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
 }
 
-.cardVenda p{
-    padding: 350px 10px;
+
+.cardVenda a{
+    padding: auto;
+}
+
+.secaoVendas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
 }
 
 /*//////////
