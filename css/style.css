@@ -241,6 +241,42 @@ footer{
     gap: 80px;
 }
 
+.loading{
+    width: 200px;
+}
+
+    /*VENDA*/
+    .vendaProduto{
+        width: 500px;
+        height: 500px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: #216daa;
+        border-radius: 15px;
+        font-size: larger;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .descricaoProduto{
+        width: 60%;
+        height: 500px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: 30px;
+        align-items: center;
+        padding: auto;
+        background-image: url(/img/nosso_trabalho.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #fff;
+        transition: 0.5s ease;
+    }
 /*//////////
 ///FOOTER///
 //////////*/

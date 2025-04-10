@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="site">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Varela Round">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/include/lib/angular-1.6.9/angular.js"></script>
+    <script src="/app.js"></script>
+    <script src="/include/controller/produtoController.js"></script>
+    <script src="/include/service/produtoService.js"></script>
+    <title>Template teste</title>
 </head>
-<body>
-    
+
+<body ng-controller="produtoController">
+    <header id="headerContainer" class="headerContainer">
+        <a href="#"><img src="/img/logo generica.avif" class="logo"></a>
+        <div class="divLista">
+            <ul id="listaContainer">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#nossoTrabalho">Serviços</a></li>
+                <li><a href="#vendas">Produtos</a></li>
+                <li><a href="/views/produto.html">Portifólio</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <h1 id="h1Vendas">Produtos</h1>
+    <section id="vendas">
+        <div class="vendaProduto">
+            <img id="iProduto" ng-src="{{n.imagemBase64 || '/img/naoDisponivel.jpg'}}" alt="" style="width: 350px; height: 350px; margin: 0 auto 0 auto;">
+            <br>
+            {{n.nome}}
+            <br>
+            R${{n.venda.toFixed(2)}}
+            <br>
+            Quantidade: {{n.quantidade}}
+        </div>
+        <div class="descricaoProduto"></div>
+        <!--<img src="/img/loading.gif" ng-show="carregando == true" class="loading">-->
+    </section>
+    <br><br><br><br>
+    <footer>
+        <div class="footerInfo">
+            <h1>Meu Site</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetur ipsum veniam voluptates,
+                illum debitis? Fuga optio, eligendi aperiam unde voluptates veniam quisquam, a quas saepe quasi
+                praesentium delectus aspernatur!
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>

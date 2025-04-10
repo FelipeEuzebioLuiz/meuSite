@@ -20,8 +20,8 @@
             <ul id="listaContainer">
                 <li><a href="#">Home</a></li>
                 <li><a href="#nossoTrabalho">Serviços</a></li>
-                <li><a href="#vendas">Vendas</a></li>
-                <li><a href="">Portifólio</a></li>
+                <li><a href="#vendas">Produtos</a></li>
+                <li><a href="/views/produto.html">Portifólio</a></li>
 
             </ul>
         </div>
@@ -61,14 +61,15 @@
     </section>
 
     <br><br><br>
-    <h1 id="h1Vendas">Vendas</h1>
+    <h1 id="h1Vendas">Produtos</h1>
     <br>
     <section id="vendas">
         <ul class="secaoVendas">
+            <img src="/img/loading.gif" ng-show="carregando == true" class="loading">
             <li ng-repeat="n in produtos" class="cardVenda">
-                <img src="/img/logo generica.avif" alt="" style="width: 300px; height: 300px; margin: 0 auto 0 auto;">
+                <img id="iProduto" alt="n.nome" ng-src="{{n.imagemBase64 || '/img/naoDisponivel.jpg'}}" style="width: 300px; height: 300px; margin: 0 auto 0 auto;">
                 <br>
-                {{n.nome}}
+                <a href="/views/produto.html" ng-click="selecionarObjeto(n)">{{n.nome}}</a>
                 <br>
                 R${{n.venda.toFixed(2)}}
                 <br>
